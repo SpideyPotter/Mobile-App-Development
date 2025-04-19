@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receive Email"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etGmailUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gmail Username"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etGmailPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gmail Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Inbox (Simulated)"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnOpenGmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Gmail App"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inbox will appear here..."
+            android:textSize="14sp"/>
+    </ScrollView>
+
+</LinearLayout>
